@@ -1,0 +1,1 @@
+Static card style website generated from Wordpress using Simply Static.
