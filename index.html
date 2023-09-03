@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>squishu on the web</title>
+    <link href='style.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel='icon' type='image/x-icon' href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  </head>  
+  <body>
+    <div class="ufo"><img src='img/ufo.gif'></div>
+    
+    <header>
+        <a href='index.html'><img src="img/smoking-bj.gif" height="128px", width="128px" class="rounded"></a>
+        <a href='index.html'><img src="img/smoking-alien.gif" height="172px", width="172px" class="rounded"></a>
+        <a href='index.html'><img src="img/smoking-elf.gif" height="128px", width="128px" class="rounded"></a>
+      <p>
+        <b><h2>squishu (on the web!)</h2></b>
+      </p>
+    </header>
+  
+    <content>
+      <table class='table-content'>
+        <tr>
+          <td><img src='img/under-construction.gif' height='128px' width='300px' class='rounded'></td>
+          <td><img src='img/under-construction.gif' height='128px' width='300px' class='rounded'></td>
+        </tr>
+        <tr>
+          <td><img src='img/under-construction.gif' height='128px' width='300px' class='rounded'></td>
+          <td><img src='img/under-construction.gif' height='128px' width='300px' class='rounded'></td>
+        </tr>
+        <tr>
+          <td><img src='img/under-construction.gif' height='64px' width='300px' class='rounded'></td>
+          <td><img src='img/under-construction.gif' height='64px' width='300px' class='rounded'></td>
+        </tr>
+      </table>
+      <p>
+        <img src='img/worm.gif'>
+        <img src='img/worm.gif'>
+        <img src='img/worm.gif'></br>
+        the web crawlers are working overtime!
+      </p> 
+    </content>
+    
+    <footer>
+      <p>
+        <div class='speech-bubble'>
+          <div id='speech-bubble-text'></div>
+        </div>
+        <div class='speech-bubble-tip'></div>
+        <img src='img/pentagram.gif' height='36px' width='36px'>
+        <img src='img/dancing-alien.gif' height='54px' width='32px'>
+        <img src='img/pentagram.gif' height='36px' width='36px'>
+      </p>
+    </footer>
+    
+  </body>
+
+  <!--RANDOM ELEMENTS:-->
+  <script type='text/javascript'>
+    var quotes = [
+    'The truth is out there!',
+    'Made with love in Canada! <img src="&sol;img&sol;canada.gif" height="14px", width="20px">',
+    'All your base are belong to us.',
+    'The hard times have only just begun.',
+    'You must construct additional pylons!',
+    'The horrors persist, but so do I~',
+    ];
+    
+    document.getElementById('speech-bubble-text').innerHTML = quotes[Math.floor(Math.random()*quotes.length)];;
+  </script>
+</html>
