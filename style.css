@@ -1,0 +1,158 @@
+html{
+  min-height: 100vh;
+  position:relative;
+}
+body {
+  background-color: #080808;
+  background-image: url("img/space.png");
+  background-repeat: repeat;
+  color:#eeeeee;
+  font-family:Ubuntu;
+  text-align: center;
+  min-height: 100%;
+}
+.ib {
+  display: inline-block;
+}
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom:0px;
+}
+footer {
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  padding-top: 32px;
+}
+content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rounded {
+  outline: solid;
+  outline-width: 2px;
+  outline-color: #000000;
+  border-radius: 50%;
+}
+.social-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 16px;
+}
+.socials {
+  line-height: 40px;
+  text-align: center;
+}
+a:link {
+  color: #eeeeee;
+  text-decoration: none;
+}
+a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  color: rgb(21, 182, 48);
+  text-decoration: none;
+}
+a:active {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.speech-bubble {
+  position: relative;
+  background: #eeeeee;
+  color: #000000;
+  border-radius: .4em;
+  width: fit-content;
+  min-width: 96px;
+  min-height: 22px;
+  max-width: 300px;
+  padding: 3px 8px 0px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.speech-bubble-tip {
+  position: relative;
+  left: 20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-top-color: #eeeeee;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.green{
+  color: rgb(21, 182, 48);
+}
+      
+.ufo {
+	pointer-events: none;
+}
+
+ /* UFO CONTROLS BELOW: */
+
+.ufo > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
