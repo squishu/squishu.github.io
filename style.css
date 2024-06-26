@@ -97,6 +97,9 @@ a:active {
 .green{
   color: rgb(21, 182, 48);
 }
+.red{
+  color: rgb(159, 50, 50);
+}
       
 .ufo {
 	pointer-events: none;

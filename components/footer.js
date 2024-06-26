@@ -8,6 +8,7 @@ connectedCallback() {
 
 <footer>
   <p class="socials">
+    <b class="green">squishutbh@gmail.com</b>
   </p>
 </footer>
 
